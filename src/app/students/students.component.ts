@@ -21,18 +21,20 @@ export class StudentsComponent implements OnInit {
 
   ngOnInit(): void {
 
- //   this.getStudents();
+    this.getStudents();
   }
 
 
   getStudents(){
-    this.studentService.getStudents()
-    .subscribe(students => {
-      for(var counter=0; counter < students.length; counter++){
+    if(this.storageService.ready().length == 0){
+      this.studentService.getStudents()
+      .subscribe(students => {
+        for(var counter=0; counter < students.length; counter++){
         console.log(students[counter])
         this.storageService.create(students[counter])
       }
-  });
+      });
+    }
   }
   
   handleEdit(student: Student){
