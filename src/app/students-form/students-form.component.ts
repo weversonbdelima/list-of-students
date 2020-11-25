@@ -20,19 +20,9 @@ export class StudentsFormComponent implements OnInit {
   });
 
   student!:Student
-
   constructor(private storageService:StorageService, private route: ActivatedRoute, private location: Location) { }
 
-  ngOnInit(): void {
-    this.getStudent();
-    console.log('edit')
-  }
-
-
-  getStudent():void{
-    console.log('aa')
-    console.log(this.route.snapshot.paramMap.get('student'))
-  }
+  ngOnInit(): void {}
 
   handleOnSubmit(){
 
