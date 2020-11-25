@@ -5,8 +5,9 @@ import {StudentsComponent} from './students/students.component'
 import {StudentsEditComponent} from './students-edit/students-edit.component'
 
 const routes: Routes = [
-  { path: '', redirectTo: '/student', pathMatch: 'full' },
-  {path: 'student', component:StudentsComponent},
+  { path: '', redirectTo: '/student/list', pathMatch: 'full' },
+  {path: 'student/list', component:StudentsComponent},
+  {path: 'student/register', component:StudentsFormComponent},
   {path: 'student/edit/:name', component:StudentsEditComponent},
   
 ];

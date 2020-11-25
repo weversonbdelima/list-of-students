@@ -1,10 +1,20 @@
+.StudentsForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.StudentsForm h1{
+    text-transform: uppercase;
+    color: rgb(130, 87, 229);
+}
+
+
+
 .students-form{
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 480px;
-    padding: 64px;
-    
 }
 
 .students-form .register{

@@ -1,13 +1,14 @@
 /* HeroesComponent's private CSS styles */
-h2{
+.Students h1{
   color: rgb(130, 87, 229);
+  text-transform: uppercase;
+  
 }
 
-.Students {
+.Students ul{
 
     width: auto;
     height: auto;
-    padding: 20px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -17,7 +18,7 @@ h2{
 
 
 .Students .Card{
-  width: 400px;
+  width: auto;
   height: 200px;
   padding: 20px;
   margin: 20px;

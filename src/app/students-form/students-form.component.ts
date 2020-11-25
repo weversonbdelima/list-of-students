@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import {StorageService} from '../storage.service';
 import {Student} from '../student'
-
+import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -21,7 +21,7 @@ export class StudentsFormComponent implements OnInit {
 
   student!:Student
 
-  constructor(private storageService:StorageService, private route: ActivatedRoute) { }
+  constructor(private storageService:StorageService, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit(): void {
     this.getStudent();
@@ -42,8 +42,10 @@ export class StudentsFormComponent implements OnInit {
       DataNascimento: this.studentForm.value.dateOfBirth,
       Sexo: this.studentForm.value.sex,
     }
-    console.log(this.student)
+
     this.storageService.create(this.student);
+
+    this.location.back();
   }
 
 }

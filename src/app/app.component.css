@@ -1,14 +1,38 @@
-h1{
-    margin-left: 60px;
-    color: rgb(130, 87, 229);
-}
-
 .AppComponent{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
+.Header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(130, 87, 229);
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.Header nav h1{
+    margin: 20px 70px 20px 70px;
+    color: #fff;
+}
+
+.Header nav a{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.Container{
+
+    padding: 70px;
+}
 
 
 

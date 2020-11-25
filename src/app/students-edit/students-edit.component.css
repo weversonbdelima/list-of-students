@@ -1,9 +1,20 @@
+.StudentsEdit{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.StudentsEdit h1{
+    color: rgb(130, 87, 229);
+    text-transform: uppercase;
+}
+
+
 .students-form{
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 480px;
-    padding: 64px;
     
 }
 

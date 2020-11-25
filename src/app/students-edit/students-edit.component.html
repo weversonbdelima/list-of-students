@@ -1,11 +1,13 @@
-<h2>Editar Aluno</h2>
+<div class="StudentsEdit">
+    <h1>Editar Aluno</h1>
 
-<form class="students-form" [formGroup]="studentForm" (ngSubmit)="handleOnSubmit()">
-    <input type="text" formControlName="name" placeholder="Nome">
-    <input type="text" formControlName="email" placeholder="E-mail">
-    <input type="text" formControlName="dateOfBirth" placeholder="Data de Nascimento">
-    <input type="text" formControlName="sex"placeholder="Sexo">
+    <form class="students-form" [formGroup]="studentForm" (ngSubmit)="handleOnSubmit()">
+        <input type="text" formControlName="name" placeholder="Nome">
+        <input type="text" formControlName="email" placeholder="E-mail">
+        <input type="text" formControlName="dateOfBirth" placeholder="Data de Nascimento">
+        <input type="text" formControlName="sex"placeholder="Sexo">
 
-<button class="register" type="submit">Editar</button>
+         <button class="register" type="submit">Editar</button>
 
-</form>
+    </form>
+</div>

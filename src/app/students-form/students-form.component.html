@@ -1,4 +1,7 @@
-<form class="students-form" [formGroup]="studentForm" (ngSubmit)="handleOnSubmit()">
+<div class="StudentsForm">
+    <h1>Registrar Aluno</h1>
+
+    <form class="students-form" [formGroup]="studentForm" (ngSubmit)="handleOnSubmit()">
         <input type="text" formControlName="name" placeholder="Nome">
         <input type="text" formControlName="email" placeholder="E-mail">
         <input type="text" formControlName="dateOfBirth" placeholder="Data de Nascimento">
@@ -7,3 +10,4 @@
     <button class="register" type="submit">Registrar</button>
 
 </form>
+</div>
