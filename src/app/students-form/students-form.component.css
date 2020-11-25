@@ -1,0 +1,38 @@
+.students-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    padding: 64px;
+    
+}
+
+.students-form .register{
+    background-color: var(--colorButton);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    color: var(--colorTextButton);
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    
+}
+
+.students-form .register:hover{
+    background-color: var(--colorButtonHover);
+}
+
+
+.students-form input{
+    font-size: 16px;
+    width: 320px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-color: var(--colorInputBorder);
+    padding-left: 20px;
+}
+

@@ -1,0 +1,40 @@
+h1{
+    margin-left: 60px;
+    color: rgb(130, 87, 229);
+}
+
+.AppComponent{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+.studentForm{
+    background-color: rgb(130, 87, 229);
+    height: 100vh;
+    width: 40vw;
+
+}
+
+.studentList{
+  
+    padding: 0px 40px 40px 40px
+}
+
+@media (max-width: 800px){
+    .studentForm{
+        height: 60vh;
+        width: 100vw;
+    }
+
+    .studentLis{
+        width: 100vw;
+    }
+
+    .AppComponent{
+        flex-direction: column;
+    }
+}

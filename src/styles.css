@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    --colorText:#212529;
+    --colorTextButton: #fff;
+    --colorButton: #2196f3;
+    --colorButtonHover: #0c7cd5;
+    --colorInputBorder: #ced4da;
+    color: var(--colorText);
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+

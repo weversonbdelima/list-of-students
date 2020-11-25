@@ -1,0 +1,21 @@
+<h2>Students</h2>
+<ul class="Students">
+    <li *ngFor="let student of storageService.ready()">
+        <div class="Card">
+           
+            <span class="text">Nome: {{student.Nome}}</span>
+            <br>
+            <span class="badge">Email: {{student.Email}}</span>
+            <br>
+            <span class="badge">Data de Nascimento: {{student.DataNascimento}}</span>
+            <br>
+            <span class="badge">Sexo: {{student.Sexo}}</span>
+
+            <div class="ButtonGroup">
+                <button class="Delete" (click)="storageService.delete(student)">delete</button>
+                <button class="Edit" (click)="handleEdit(student)">Editar</button>
+            </div>
+        </div>
+
+    </li>
+</ul>
