@@ -1,5 +1,5 @@
-<h1> Rodando a aplicação web <h2>
-
+### Rodando a aplicação web
+```bash
 # Clone o repositório 
 
 $ git clone https://github.com/weversonbdelima/list-of-students.git
@@ -17,3 +17,4 @@ $ npm install
 $ ng serve
 
 # A aplicação  será aberta na porta 4200 - acesse http//localhost:4200
+```
